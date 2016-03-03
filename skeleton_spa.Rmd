@@ -18,7 +18,7 @@ person:
 
 ---
 aside:
-  - section: contact \FA \faUser
+  - section: contacto \FA \faUser
     content: |
       234 Alejandro Magno Monterrey, NL 64610 Mexico
   - item: tel
@@ -35,27 +35,27 @@ aside:
     content: |
       \makebox{Supply Chain}
       \makebox{Machine Learning}
-      \makebox{Data Visualization}
+      \makebox{Visualización de Datos}
       \makebox{Business Intelligence}
       \makebox{Business Modelling}
-      \makebox{Operation Research}
-      \makebox{Continuous Improvement}
+      \makebox{Investigación de Operaciones}
+      \makebox{Mejora Continua}
       \makebox{Forecasting}
-      \makebox{Processes Improvement}
-      \makebox{Replenishment}
-      \makebox{Store Operations}
-      \makebox{System Dynamics}
-      \makebox{Systems Optimization}
-  - section: certifications \FA \faCertificate
+      \makebox{Mejora de Procesos}
+      \makebox{Suministro}
+      \makebox{Operacion de Tiendas}
+      \makebox{Dinámica de Sistemas}
+      \makebox{Optimización de Sistemas}
+  - section: certificaciones \FA \faCertificate
     content: |
     	\makebox {Six Sigma Green Belt \FA \faCheckNice}
     	\makebox {Lean Project Leader \FA \faCheckNice}
     	\makebox {Data Scientist Spec. \FA \faCheckNice}
-  - section: languages \FA \faLanguage
+  - section: lenguajes \FA \faLanguage
     content: |
-    	\makebox {Spanish \FA \faDotCircle \faDotCircle \faDotCircle \faDotCircle \faDotCircle}
-    	\makebox {English \FA \faDotCircle \faDotCircle \faDotCircle \faDotCircle \faDotCircle}
-  - section: programming \FA \faCode
+    	\makebox {Español \FA \faDotCircle \faDotCircle \faDotCircle \faDotCircle \faDotCircle}
+    	\makebox {Inglés \FA \faDotCircle \faDotCircle \faDotCircle \faDotCircle \faDotCircle}
+  - section: lenguajes de programacion \FA \faCode
     content: |
      \makebox {R \FA \faDotCircle \faDotCircle \faDotCircle \faDotCircle \faCircleO}
       \makebox {SQL \FA \faDotCircle \FA \faDotCircle \FA \faDotCircle \FA \faDotCircle \FA \faCircleO}
@@ -80,7 +80,7 @@ aside:
 
 ---
 main:
-  - section: Experience \FA \faBriefcase  
+  - section: Experiencia \FA \faBriefcase  
   - entrylist:
   
       - when: 2016
@@ -88,7 +88,7 @@ main:
         who: Freelancer
         where: Monterrey, Mexico
         desc: |
-          •	Applying analytics expertise to create prediction models and develop data products
+          •	Desarollo de modelos predictivos y productos de data aplicando experise en analytics
 
       - when: 2015 2014
         what: Retail Data Analytics Specialist

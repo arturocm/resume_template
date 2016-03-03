@@ -8,6 +8,7 @@
 %\RequirePackage[absolute,overlay]{textpos}
 %\RequirePackage[backend=biber, style=verbose, maxnames=99, sorting=ydnt]{biblatex}
 
+
 \NeedsTeXFormat{LaTeX2e}
 
 \DeclareOption{nocolors}{\def\@cv@nocolors{}}
@@ -39,10 +40,11 @@
 \definecolor{lightgray}{HTML}{999999}
 
 \definecolor{green}{HTML}{C2E15F}
-\definecolor{orange}{HTML}{FDA333}
+\definecolor{orange}{HTML}{FF9900}
 \definecolor{purple}{HTML}{D3A4F9}
-\definecolor{red}{HTML}{FB4485}
-\definecolor{blue}{HTML}{6CE0F1}
+\definecolor{red}{HTML}{669900}
+\definecolor{blue}{HTML}{428BCA}
+\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -76,7 +78,6 @@
 %%%%%%%%%
 % Fonts %
 %%%%%%%%%
-
 \usepackage[quiet]{fontspec}
 \usepackage{txfonts}
 \newfontfamily\bodyfont
@@ -86,6 +87,9 @@ BoldItalicFont=Lato-BoldItalic.ttf]
 {Lato-Regular.ttf}
 \newfontfamily\thinfont[]{Lato-Hairline.ttf}
 \newfontfamily\headingfont[]{Lato-Black.ttf}
+
+\usepackage{fontawesome}
+\newfontfamily\FA[]{fontawesome-webfont.ttf}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont
@@ -111,24 +115,24 @@ BoldItalicFont=Lato-BoldItalic.ttf
 \RequirePackage{tikz}
 
 \newcommand{\rolefont}{%
-  \fontsize{14pt}{24pt}\selectfont%
+  \fontsize{12pt}{12pt}\selectfont%
   \thinfont%
   \color{white}%
 }
 
 \newcommand{\header}[4]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
-      \fontsize{40pt}{72pt}\color{header}%
-      \MakeLowercase{{\thinfont #1}{\bodyfont  #2}{\fontsize{27pt}{48pt}\thinfont #3}}
+      \fontsize{30}{40pt}\color{header}%
+      \MakeLowercase{{\thinfont #1}{\bodyfont  #2}{\fontsize{14pt}{20pt}\thinfont #3}}
     };
     \node [anchor=north] at (name.south) {%
-      \fontsize{14pt}{24pt}\color{header}%
+      \fontsize{10pt}{12pt}\color{header}%
       \thinfont #4%
     };
   \end{tikzpicture}
-  \vspace{2.5cm}
+  \vspace{1cm}
   \vspace{-2\parskip}
 }
 
@@ -158,24 +162,24 @@ BoldItalicFont=Lato-BoldItalic.ttf
 
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  \par\vspace*{0pt}
   {%
-    \LARGE\headingfont\color{headercolor}%
+    \Large\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}
+  \par\vspace*{0pt}
 }
 
 \renewcommand{\subsection}[1]{
-  \par\vspace{.5\parskip}%
+  \par\vspace*{0pt}
   {\Large\headingfont\color{headercolor} #1}
-  \par\vspace{.25\parskip}%
+  \par\vspace*{0pt}
 }
 
 \renewcommand{\subsubsection}[2]{
-  \par\vspace{.5\parskip}%
+  \par\vspace*{0pt}
   {\Large\headingfont\color{headercolor} #2}
-  \par\vspace{.25\parskip}%
+  \par\vspace*{0pt}
 }
 
 \pagestyle{empty}
@@ -195,7 +199,7 @@ BoldItalicFont=Lato-BoldItalic.ttf
 
 \iffalse
 \newcommand{\entry}[4]{%
-  \parbox[t]{2cm}{#1}&\parbox[t]{11.3cm}{%
+  \parbox[t]{.5cm}{#1}&\parbox[t]{14cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
@@ -204,7 +208,7 @@ BoldItalicFont=Lato-BoldItalic.ttf
 \fi
 
 \newcommand{\entry}[5]{%
-  \parbox[t]{1cm}{#1}&\parbox[t]{12.3cm}{%
+  \parbox[t]{.5cm}{#1}&\parbox[t]{14cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
@@ -225,9 +229,9 @@ BoldItalicFont=Lato-BoldItalic.ttf
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
+    \par\vspace{\baselineskip}{\large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{4}(.5, 2.3)
   \begin{flushright}
   \obeycr
 }{%
@@ -383,14 +387,14 @@ BoldItalicFont=Lato-BoldItalic.ttf
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=2.5cm,bottom=0.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.4cm,top=1cm,right=.5cm,bottom=0.25cm,nohead,nofoot]{geometry}
 \RequirePackage[hidelinks, unicode=true]{hyperref}
 \hypersetup{
-    colorlinks=false,       
-    linkcolor=red,          
-    citecolor=red,        
-    filecolor=red,      
-    urlcolor = red,
+    colorlinks=true,       
+    linkcolor= coolblack,          
+    citecolor= coolblack,         
+    filecolor= coolblack,       
+    urlcolor = coolblack, 
     bookmarks=true,
     pdfborder={0 0 0}}
  
@@ -400,3 +404,6 @@ BoldItalicFont=Lato-BoldItalic.ttf
 \makeatother
 
 \usepackage{pifont}
+\usepackage[utf8]{inputenc}
+
+

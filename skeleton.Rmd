@@ -20,14 +20,16 @@ person:
 aside:
   - section: contact \FA \faUser
     content: |
-      234 Alejandro Magno Monterrey, NL 64610 Mexico
+      345 Alejandro Magno Monterrey, NL 64610 Mexico
   - item: tel
     content: |
-    	\makebox {+52 1 (662) 363 2356 \FA \faPhone}
+    	\makebox {+52 (166) 2363 2356 \FA \faPhone}
   - item: links
     content: |
+      \makebox{\href{mailto:arturo.cardenas@mail.mcgill.ca}{\small arturo.cardenas@mail.mcgill.ca}}
       \href{mailto:arturocam@gmail.com.com}{arturocam@gmail.com {\FA \faEnvelopeAlt}}
       \href{https://github.com/arturocm/}{arturocm {\FA \faGithub}}
+      \href{http://arturocm.github.io/}{arturocm.github.io {\FA \faExternalLink}}
       \href{http://arturocm.github.io/}{arturocm.github.io {\FA \faExternalLink}}
       \href{https://www.linkedin.com/in/arturocardenas}{arturocardenas {\FA \faLinkedin}}
       \href{http://twitter.com/arturocm}{arturocm {\FA \faTwitter}}  
@@ -43,7 +45,6 @@ aside:
       \makebox{Forecasting}
       \makebox{Processes Improvement}
       \makebox{Replenishment}
-      \makebox{Store Operations}
       \makebox{System Dynamics}
       \makebox{Systems Optimization}
   - section: certifications \FA \faCertificate
@@ -161,8 +162,7 @@ main:
         	Minor in Industrial Engineering 
         	
   - section: Honors and Awards \FA \faTrophy
-  
 ---
 
 •	P&G’s “Execute with Excellence” Pearl Award for groundbreaking results in Fem Care pilot project  
-•	McGill MMM program performance scholarship, awarded to top students during the Fall 2010    
+•	McGill MMM program performance scholarship, awarded to top students during the Fall 2010  

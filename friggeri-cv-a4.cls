@@ -231,7 +231,7 @@ BoldItalicFont=Lato-BoldItalic.ttf
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{4}(.5, 2.3)
+  \begin{textblock}{4.3}(.5, 1.6)
   \begin{flushright}
   \obeycr
 }{%

@@ -26,8 +26,10 @@ aside:
     	\makebox {+52 1 (662) 363 2356 \FA \faPhone}
   - item: links
     content: |
+      \makebox{\href{mailto:arturo.cardenas@mail.mcgill.ca}{\footnotesize arturo.cardenas@mail.mcgill.ca {\FA \faEnvelope}}}
       \href{mailto:arturocam@gmail.com.com}{arturocam@gmail.com {\FA \faEnvelopeAlt}}
       \href{https://github.com/arturocm/}{arturocm {\FA \faGithub}}
+      \href{http://arturocm.github.io/}{arturocm.github.io {\FA \faExternalLink}}
       \href{http://arturocm.github.io/}{arturocm.github.io {\FA \faExternalLink}}
       \href{https://www.linkedin.com/in/arturocardenas}{arturocardenas {\FA \faLinkedin}}
       \href{http://twitter.com/arturocm}{arturocm {\FA \faTwitter}}  
@@ -38,7 +40,7 @@ aside:
       \makebox{Visualización de Datos}
       \makebox{Business Intelligence}
       \makebox{Business Modelling}
-      \makebox{Investigación de Operaciones}
+      \makebox{Investigación Operaciones}
       \makebox{Mejora Continua}
       \makebox{Forecasting}
       \makebox{Mejora de Procesos}
@@ -51,11 +53,11 @@ aside:
     	\makebox {Six Sigma Green Belt \FA \faCheckNice}
     	\makebox {Lean Project Leader \FA \faCheckNice}
     	\makebox {Data Scientist Spec. \FA \faCheckNice}
-  - section: lenguajes \FA \faLanguage
+  - section: idiomas \FA \faLanguage
     content: |
     	\makebox {Español \FA \faDotCircle \faDotCircle \faDotCircle \faDotCircle \faDotCircle}
     	\makebox {Inglés \FA \faDotCircle \faDotCircle \faDotCircle \faDotCircle \faDotCircle}
-  - section: lenguajes de programacion \FA \faCode
+  - section: programación \FA \faCode
     content: |
      \makebox {R \FA \faDotCircle \faDotCircle \faDotCircle \faDotCircle \faCircleO}
       \makebox {SQL \FA \faDotCircle \FA \faDotCircle \FA \faDotCircle \FA \faDotCircle \FA \faCircleO}
@@ -88,27 +90,27 @@ main:
         who: Freelancer
         where: Monterrey, Mexico
         desc: |
-          •	Desarollo de modelos predictivos y productos de data aplicando experise en analytics
+          •	Desarollo de modelos predictivos y productos de data aplicando analíticos avanzados
 
       - when: 2015 2014
         what: Retail Data Analytics Specialist
         who: Procter \& Gamble - Walmart Canada Team
         where: Toronto, Canada
         desc: |
-          •	Disrupted Canada POS data Extract Transform Load process (ETL), reducing Service Line Agreement from 20 to 3 days, enabling Customer Teams sell with bigger, better, and faster data. At Walmart Canada only, it resulted in winning Category Captaincy in Oral Care, Fem Care and Baby Care representing a ***~$5million*** annual POS increase  
-          •	Designed a Brands Feature co-dependence regression analysis to maximize Feature ROI and Market Share growth  
-          •	Led P&G's Advance Analytics Global KNIME Training from the Toronto General Office  
-          •	Shared & Reapplied Spotfire templates to visualize the impact on the business of Private Label at Walmart Canada  
-          •	Pitched to Senior Mgmt. leveraging P&G’s HDFS to further improve POS data ETL process using Sqoop and Hive  
+          •	Creación y desarrollo de proceso desruptivo de extracción, transformación y carga (ETL) para POS data Nacional. Reducción del Acuerdo de Nivel de Servicio (SLA) de 20 a 3 días lo cual habilitó a los equipos de ventas a vender con "más, mejor y veloz" data. Solamente en Walmart Canada resultó en la obtención de la capitancía en las categorias de Oral Care, Fem Care y Baby Care representando un incremento de POS de **~$5million** anuales  
+          •	Diseño de análisis de regresión de co-dependencia de marcas en eventos  para maximizar ROI en eventos y promociones al igual que incrementar Market Share  
+          •	Responsable de entrenamiento global en KNIME para el area de Analíticos Avanzados  
+          •	Visualización del impacto de marcas privadas en Walmat Canada por medio de Spotfire  
+          •	Elaboración de propuesta para untilizar Hadoop para mejorar el proceso de ETL de POS data por medio de Sqoop y Hive  
         
       - when: 2014 2013
         what: Retail Replenishment Analyst
         who: Procter \& Gamble - Walmart Canada Team
         where: Toronto, Canada
         desc: |
-          •	P&G’s Health & Beauty supply chain replenishment owner, supporting a business generating ***$250million*** annually  
-          •	Generated ***$5.8 million*** in incremental supply chain driven sales through analytics and replenishment interventions  
-          •	Grew Femme Care POS by 4% (***$2million***) and Shaving POS by 4% (***$1million***) over a 4 months period by pioneering a “How high is up” inventory \& forecast pilot project  
+          •	Responsable de reaprovisionamiento de las categorias de Salud y Belleza, con un valor anual en ventas de **$250million** anuales  
+          •	Generación de ***$5.8million*** en ventas impulsadas por medio de Supply Chain gracias al uso de analíticos e intervenciones de reaprovisionamiento   
+          •	Creación y desarrollo de projecto piloto "How high is up" para mejorar forecasts y reducir inventarios. Esto generó un crecimiento de 4% en POS de Fem Care (***$2million***) y de 4% en POS de Shaving (***$1million***) en un periodo de 4 meses    
           •	Delivered time savings of ***120 man hours*** per month by redesigning and automating forecast and replenishment processes that impact across P&G’s entire portfolio at Walmart  
           •	Increased P&G’s product portfolio in-stock (***+1% VYA***) by revamping replenishment weekly in-stock reporting allowing eleven team members to readily ID opportunities, root causes and drive to resolution faster  
           •	Streamlined customer service coverage for largest P&G scale event in N America delivering 100 hours staffing requirement decrease and 100% reported data integrity (***+10% VYA***).  
@@ -119,8 +121,8 @@ main:
         where: Toronto, Canada
         desc: |
           
-          •	Identified phantom inventory instances by developing a dashboard based on POS data  
- 
+          •	Identified phantom inventory instances by developing a dashboard based on POS data
+          
       - when: 2012
         what: Supply Chain Consultant
         who: Future Electronics Inc.
